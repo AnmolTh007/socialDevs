@@ -3,7 +3,7 @@ import { Link } from "react-router";
 import { useAuth } from "../context/AuthContext";
 
 export const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);  // for responsive menu
+  const [menuOpen, setMenuOpen] = useState(false);
   const { signInWithGitHub, signOut, user } = useAuth();
 
   const displayName = user?.user_metadata.user_name || user?.email;
@@ -141,5 +141,3 @@ export const Navbar = () => {
     </nav>
   );
 };
-
-export default Navbar;

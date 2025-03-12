@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import { Post } from "./postList";
+import { Post } from "./PostList";
 
 interface Props {
   post: Post;
